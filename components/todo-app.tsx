@@ -1,11 +1,10 @@
 "use client";
 
-import TaskHeader from "@/components/task-header";
-import TaskForm from "@/components/task-form";
-import TaskFilters from "@/components/task-filters";
-import TaskList from "@/components/task-list";
 import { useState } from "react";
-import type { Task, TaskFilter } from "@/lib/tasks";
+import TaskList from "@/components/task-list";
+import TaskForm from "@/components/task-form";
+import TaskHeader from "@/components/task-header";
+import TaskFilters from "@/components/task-filters";
 
 const TodoApp = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

@@ -1,5 +1,5 @@
-import { useState, type ChangeEvent, type SubmitEvent } from "react";
 import { CornerDownLeft, Plus } from "lucide-react";
+import { useState, type ChangeEvent, type SubmitEvent } from "react";
 
 type TaskFormProps = { onCreate: (title: string) => void };
 

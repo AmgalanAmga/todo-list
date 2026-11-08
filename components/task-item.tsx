@@ -1,5 +1,4 @@
 import { Check, Trash2 } from "lucide-react";
-import type { Task } from "@/lib/tasks";
 
 type TaskItemProps = {
   task: Task;
