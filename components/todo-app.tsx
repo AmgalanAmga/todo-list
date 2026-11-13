@@ -3,8 +3,8 @@
 import { useState } from "react";
 import TaskList from "@/components/task-list";
 import TaskForm from "@/components/task-form";
-import TaskHeader from "@/components/task-header";
 import TaskFilters from "@/components/task-filters";
+import { TaskHeader } from "@/components/task-header";
 
 const TodoApp = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
