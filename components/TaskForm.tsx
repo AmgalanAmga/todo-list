@@ -3,7 +3,7 @@ import { useState, type ChangeEvent, type SubmitEvent } from "react";
 
 type TaskFormProps = { onCreate: (title: string) => void };
 
-const TaskForm = ({ onCreate }: TaskFormProps) => {
+export const TaskForm = ({ onCreate }: TaskFormProps) => {
   const [title, setTitle] = useState("");
 
   const handleTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -49,5 +49,3 @@ const TaskForm = ({ onCreate }: TaskFormProps) => {
     </>
   );
 };
-
-export default TaskForm;

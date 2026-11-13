@@ -1,5 +1,5 @@
-import TaskItem from "@/components/task-item";
-import TaskEmptyState from "@/components/task-empty-state";
+import TaskItem from "@/components/TaskItem";
+import { TaskEmptyState } from "@/components/TaskEmptyState";
 
 type TaskListProps = {
   tasks: Task[];
@@ -8,7 +8,7 @@ type TaskListProps = {
   onDelete: (task: Task) => void;
 };
 
-const TaskList = ({ tasks, hasTasks, onToggle, onDelete }: TaskListProps) => {
+export const TaskList = ({ tasks, hasTasks, onToggle, onDelete }: TaskListProps) => {
   if (!tasks.length) return <TaskEmptyState hasTasks={hasTasks} />;
 
   return (
@@ -19,5 +19,3 @@ const TaskList = ({ tasks, hasTasks, onToggle, onDelete }: TaskListProps) => {
     </ul>
   );
 };
-
-export default TaskList;
