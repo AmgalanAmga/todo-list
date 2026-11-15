@@ -10,9 +10,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" className="antialiased">
-      <body className="bg-[#eaf0eb] bg-[radial-gradient(ellipse_at_20%_0%,#f5f7ee_0%,transparent_60%)] font-[Arial,Helvetica,sans-serif] text-[#213d35] selection:bg-[#cee6d6] selection:text-[#213d35]">
-        {children}
-      </body>
+      <body className="bg-[#eaf0eb] font-[Arial,Helvetica,sans-serif] text-[#213d35]">{children}</body>
     </html>
   );
 };
