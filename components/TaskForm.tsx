@@ -31,12 +31,12 @@ export const TaskForm = ({ onCreate }: TaskFormProps) => {
             value={title}
             onChange={handleTitleChange}
             placeholder="What needs to get done?"
-            className="min-w-0 flex-1 rounded-xl bg-transparent px-3 py-3.5 text-sm text-[#213d35] placeholder:text-[#75867e] focus:bg-white focus:outline-none focus:shadow-none focus-visible:outline-none focus-visible:shadow-none sm:px-4 sm:text-base"
+            className="min-w-0 flex-1 rounded-xl bg-transparent px-3 py-3.5 text-sm text-[#213d35] placeholder:text-[#75867e] focus:bg-white focus:outline-none focus:shadow-none sm:px-4 sm:text-base"
           />
           <button
             type="submit"
             disabled={!title.trim()}
-            className="cursor-pointer disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-solid focus-visible:outline-[#23735a] focus-visible:outline-offset-[3px] flex min-h-12 shrink-0 items-center gap-2 rounded-xl bg-[#236b53] px-4 text-sm font-semibold text-white transition motion-reduce:transition-none hover:bg-[#18523e] active:scale-95 disabled:bg-[#d8e5dd] disabled:text-[#63796c] sm:px-5"
+            className="cursor-pointer disabled:cursor-not-allowed flex min-h-12 shrink-0 items-center gap-2 rounded-xl bg-[#236b53] px-4 text-sm font-semibold text-white transition hover:bg-[#18523e] active:scale-95 disabled:bg-[#d8e5dd] disabled:text-[#63796c] sm:px-5"
           >
             <Plus className="h-4 w-4" />
             Add<span className="hidden sm:inline">task</span>
